@@ -1,11 +1,10 @@
+#print mean , median , mode of given numbers 
+
 n = int(input())
 
-elements = input()
-int_elements = []
+int_elements = input()
 # Store elements string into an array where each number is a spot in the array
-for elem in elements.split(' '):
-    int_elements.append(int(elem))
-
+int_elements = [int(elem) for elem in int_elements.split(' ')]
     
 sum_of_elements = sum(int_elements)
 mean = sum_of_elements / float(n)
